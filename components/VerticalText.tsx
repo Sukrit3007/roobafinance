@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 
 const VerticalText = () => {
   return (
-    <div className={cn("relative h-screen p-8 flex overflow-y-hidden bg-[#B9A0FF] text-black font-normal korna_one", korna_one.className)} style={{ writingMode: 'vertical-lr' }}>
+    <div className={cn("relative h-screen p-6 flex overflow-y-hidden bg-[#B9A0FF] text-black font-normal korna_one", korna_one.className)} style={{ writingMode: 'vertical-lr' }}>
       <div className="py-12 animate-marquee whitespace-nowrap">
         <span className="text-3xl mx-2">Event : Oasis Bus tour , JLN Stadium , Delhi </span>
         <span className="text-3xl mx-2 ">*</span>
