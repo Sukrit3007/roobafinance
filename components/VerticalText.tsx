@@ -1,10 +1,11 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 
 const VerticalText = () => {
   return (
-    <div>
-      
-    </div>
+      <div></div>
+
   )
 }
 
