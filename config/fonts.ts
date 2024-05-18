@@ -19,6 +19,7 @@ export const lexend = Lexend({
 })
 
 export const korna_one = KronaOne({
+  subsets:["latin"],
   weight: ['400'],
   variable: '--vertical-font'
 })
