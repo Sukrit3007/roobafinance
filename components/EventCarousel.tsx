@@ -1,10 +1,11 @@
-
+'use client'
 
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
 import { MapPin } from 'lucide-react'
+import { motion } from "framer-motion";
 
 
 const image1 = "https://s3-alpha-sig.figma.com/img/8c5a/a2af/5b3287578d92581af9cf3e53d33ce032?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~Ol0yJ518IWTCgcbO6NRUrK4mqSAyPEsu0Y~B5RdT~FLBsD2nj0R6oPOVkkrBo~YZLxxVJluYmYhz6NyOdHxIPKarKLM4o3aRSzhkKfLozrVEvmNsH6Tu1b3xEhfAiSGk8OOaFkd8GMFeErLiM9jvXK2mvzkt~JvCBe8doGGHq6lTfCQI64sv9fNjqaIn5ZGOx9TcZ16yCW0XWCwuAykGUmWxp-BeOp9LA8-LToD8w4uwdCOTsbYIvwX0OGIOu-DaLool8lWdvlgwNmmTRRH6cjpr8ID8Y03dRPX0RgbH-TDeRKQ~FwR5olIxHod2yI-44tvAUd5sxD73Ye4l4L-w__"
@@ -13,10 +14,20 @@ const image3 = "https://s3-alpha-sig.figma.com/img/fb8b/2fd2/623295a745f3ba3642d
 const image4 = "https://s3-alpha-sig.figma.com/img/162c/fe4e/e0e893f3f2438ff89d9770ba7e1099a6?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HVg9vZUozlu002ZHHmIBJrMLkndNs4X7gi307jZiMUeGXPH5s4FaQmaSGBpklJ-l8-1-kNDXr8t1~IqB7D6TsZ06ThJs348Lfy6-KAeATO9olM0yUHvJ-5D9PeNe3AdLWzsrOWwLx~Hw9CJkDTbjgAd6d1O-pk60Ggyka5l8oQG5zghI~vAwVkBQ05-ONtimx2HMOFC~sjgDxfJxKWXCAUMcW-zNlo5qTkqzErgmy~fKTFCVfHOvF8l6Fn-pPMI0sPLbVYWmgFys01ywzFVju2si4ZmsTa7Mcdo5~oq5BrfpjE1qvmNzDhRHlL2RVbSm6xL0mqlkpAqspelDHoERHA__"
 
 
-const MainCarousel = () => {
+const EventCarousel = () => {
     const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 1200, stopOnInteraction: false })])
+
+    const variants1 = {
+        hidden: { filter: "blur(10px)", opacity: 0 },
+        visible: { filter: "blur(0px)", opacity: 1 },
+    };
     return (
-        <div className="embla h-full" ref={emblaRef}>
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 1 }}
+            variants={variants1}
+            className="embla h-full" ref={emblaRef}>
             <div className="embla__container h-full">
                 <div className="embla__slide">
                     <Eventone />
@@ -31,11 +42,11 @@ const MainCarousel = () => {
                     <Eventfour />
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
-export default MainCarousel
+export default EventCarousel
 
 function OtherInfo() {
     return (
@@ -60,7 +71,7 @@ function Eventone() {
                 className='h-full w-full object-cover'
             />
             <div className='absolute bottom-0 left-0'>
-             <OtherInfo/>
+                <OtherInfo />
             </div>
         </div>
     )
@@ -76,7 +87,7 @@ function Eventtwo() {
                 className='h-full w-full object-cover'
             />
             <div className='absolute bottom-0 left-0'>
-             <OtherInfo/>
+                <OtherInfo />
             </div>
         </div>
     )
@@ -92,7 +103,7 @@ function Eventthree() {
                 className='h-full w-full object-cover'
             />
             <div className='absolute bottom-0 left-0'>
-             <OtherInfo/>
+                <OtherInfo />
             </div>
         </div>
     )
@@ -108,7 +119,7 @@ function Eventfour() {
                 className='h-full w-full object-cover'
             />
             <div className='absolute bottom-0 left-0'>
-             <OtherInfo/>
+                <OtherInfo />
             </div>
         </div>
     )

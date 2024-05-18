@@ -1,5 +1,5 @@
+import Hero from "@/components/Hero";
 import InfoSidebar from "@/components/InfoSidebar";
-import MainBlock from "@/components/MainBlock";
 import VerticalText from "@/components/VerticalText";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
 				<div className="hidden md:inline absolute z-50 right-0 top-0">
 					<VerticalText />
 				</div>
-				<MainBlock />
+				<Hero/>
 			</div>
 			<div className="relative h-full md:col-span-1">
 				<div className="h-full ">

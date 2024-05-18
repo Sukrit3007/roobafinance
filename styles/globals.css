@@ -19,4 +19,16 @@ html{
     flex: 0 0 50%;
     min-width: 0;
   }
+
+  .embla2 {
+    overflow: hidden;
+  }
+  .embla2__container {
+    display: flex;
+    gap: 16px;
+  }
+  .embla2__slide {
+    flex: 0 0 35%;
+    min-width: 0;
+  }
   
