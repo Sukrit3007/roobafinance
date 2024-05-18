@@ -17,7 +17,7 @@ const ArtistLineup = () => {
             alt='artist'
             width={160}
             height={160}
-            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-110'
+            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
             
           />
         </div>
@@ -27,7 +27,7 @@ const ArtistLineup = () => {
             alt='artist'
             width={200}
             height={200}
-            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-110'
+            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
           />
         </div>
         <div className='relative -ml-10'>
@@ -36,7 +36,7 @@ const ArtistLineup = () => {
             alt='artist'
             width={160}
             height={160}
-            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-110'
+            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
           />
         </div>
       </div>

@@ -32,8 +32,10 @@ const MainBlock = () => {
           <h1 className='font-bold text-6xl md:text-7xl lg:text-9xl opacity-25'>
             COLL<br />ECTI<br />BLE
           </h1>
-          <div className='absolute top-0 z-10 h-full w-full '>
-            <MainCarousel/>
+          <div className='absolute top-0 z-10 h-full w-full flex items-center justify-center'>
+            <div className='h-[80%] '>
+              <MainCarousel/>
+            </div>
           </div>
         </div>
 

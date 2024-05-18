@@ -33,8 +33,8 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-[#15181B] lexend",
-					lexend.variable
+					"min-h-screen  bg-[#15181B] lexend",
+					lexend.className
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

@@ -1,9 +1,10 @@
-'use client'
 
-import React, { useEffect } from 'react'
+
+import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
+import { MapPin } from 'lucide-react'
 
 
 const image1 = "https://s3-alpha-sig.figma.com/img/8c5a/a2af/5b3287578d92581af9cf3e53d33ce032?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~Ol0yJ518IWTCgcbO6NRUrK4mqSAyPEsu0Y~B5RdT~FLBsD2nj0R6oPOVkkrBo~YZLxxVJluYmYhz6NyOdHxIPKarKLM4o3aRSzhkKfLozrVEvmNsH6Tu1b3xEhfAiSGk8OOaFkd8GMFeErLiM9jvXK2mvzkt~JvCBe8doGGHq6lTfCQI64sv9fNjqaIn5ZGOx9TcZ16yCW0XWCwuAykGUmWxp-BeOp9LA8-LToD8w4uwdCOTsbYIvwX0OGIOu-DaLool8lWdvlgwNmmTRRH6cjpr8ID8Y03dRPX0RgbH-TDeRKQ~FwR5olIxHod2yI-44tvAUd5sxD73Ye4l4L-w__"
@@ -36,10 +37,21 @@ const MainCarousel = () => {
 
 export default MainCarousel
 
+function OtherInfo() {
+    return (
+        <div className='flex flex-col gap-8 m-6'>
+            <h1 className='font-bold text-4xl'>Event Name</h1>
+            <div className='w-fit flex flex-row gap-2 items-center justify-center font-semibold text-xl'>
+                <MapPin />
+                <p>Location</p>
+            </div>
+        </div>
+    )
+}
 
 function Eventone() {
     return (
-        <div className='h-full flex items-center justify-center '>
+        <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105'>
             <Image
                 src={image1}
                 alt="NextUI Fruit Image with Zoom"
@@ -47,12 +59,15 @@ function Eventone() {
                 height={600}
                 className='h-full w-full object-cover'
             />
+            <div className='absolute bottom-0 left-0'>
+             <OtherInfo/>
+            </div>
         </div>
     )
 }
 function Eventtwo() {
     return (
-        <div className='h-full flex items-center justify-center '>
+        <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105'>
             <Image
                 src={image2}
                 alt="NextUI Fruit Image with Zoom"
@@ -60,12 +75,15 @@ function Eventtwo() {
                 height={600}
                 className='h-full w-full object-cover'
             />
+            <div className='absolute bottom-0 left-0'>
+             <OtherInfo/>
+            </div>
         </div>
     )
 }
 function Eventthree() {
     return (
-        <div className='h-full flex items-center justify-center  '>
+        <div className='relative h-full flex items-center justify-center  transition-transform duration-300 ease-in-out hover:scale-105'>
             <Image
                 src={image3}
                 alt="NextUI Fruit Image with Zoom"
@@ -73,12 +91,15 @@ function Eventthree() {
                 height={600}
                 className='h-full w-full object-cover'
             />
+            <div className='absolute bottom-0 left-0'>
+             <OtherInfo/>
+            </div>
         </div>
     )
 }
 function Eventfour() {
     return (
-        <div className='h-full flex items-center justify-center '>
+        <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105'>
             <Image
                 src={image4}
                 alt="NextUI Fruit Image with Zoom"
@@ -86,6 +107,9 @@ function Eventfour() {
                 height={600}
                 className='h-full w-full object-cover'
             />
+            <div className='absolute bottom-0 left-0'>
+             <OtherInfo/>
+            </div>
         </div>
     )
 }
