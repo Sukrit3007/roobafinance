@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const InfoSidebar = () => {
     return (
-        <div className='h-full w-full flex flex-col items-start justify-between gap-20 py-10 pl-8'>
+        <div className='h-full w-full flex flex-col items-start justify-between gap-20 py-10 pl-10'>
             {/* heading */}
             <div className='w-full'>
                 <div className='max-w-[70%]'>
