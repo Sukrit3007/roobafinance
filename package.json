@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@fontsource/lexend": "^5.0.20",
 		"@nextui-org/avatar": "^2.0.27",
 		"@nextui-org/button": "^2.0.31",
 		"@nextui-org/card": "^2.0.28",

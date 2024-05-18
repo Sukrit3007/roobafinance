@@ -13,7 +13,7 @@ const image4 = "https://s3-alpha-sig.figma.com/img/162c/fe4e/e0e893f3f2438ff89d9
 
 
 const MainCarousel = () => {
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 2000, stopOnInteraction: false })])
+    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 1200, stopOnInteraction: false })])
     return (
         <div className="embla h-full" ref={emblaRef}>
             <div className="embla__container h-full">

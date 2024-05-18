@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import {  lexend } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
 	title: {
@@ -31,9 +32,9 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body
-				className={clsx(
-					"min-h-screen bg-[#15181B] font-sans",
-					fontSans.variable
+				className={cn(
+					"min-h-screen bg-[#15181B] lexend",
+					lexend.variable
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

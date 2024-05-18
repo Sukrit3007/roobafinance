@@ -9,8 +9,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
-     
+      writingMode: {
+        'vertical-rl': 'vertical-rl',
+      },
+      textOrientation: {
+        'sideways': 'sideways',
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0%)' },
+        },
+      },
     },
   },
   darkMode: 'class',

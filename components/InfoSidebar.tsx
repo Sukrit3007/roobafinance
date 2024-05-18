@@ -1,6 +1,5 @@
 'use client'
 
-
 import React from 'react';
 import { Button } from '@nextui-org/button';
 import { MapPin, AlarmClock } from 'lucide-react';
@@ -52,7 +51,7 @@ const InfoSidebar = () => {
                     <div className='flex items-end justify-start lg:justify-end pr-8'>
                         <Button
                             radius='full'
-                            className='bg-[#FFCA5F] text-black font-bold text-base lg:text-xl'
+                            className='bg-[#FFCA5F] text-black font-bold text-base lg:text-xl font-lexend'
                         >
                             Join Waitlist
                         </Button>
