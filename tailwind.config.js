@@ -16,8 +16,8 @@ module.exports = {
         'sideways': 'sideways',
       },
       animation: {
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',
+        marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',
       },
       keyframes: {
         marquee: {

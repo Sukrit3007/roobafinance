@@ -4,7 +4,6 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
-import { MapPin } from 'lucide-react'
 import { motion } from "framer-motion";
 
 
@@ -27,18 +26,23 @@ const CollectionCarousel = () => {
       animate="visible"
       transition={{ duration: 1 }}
       variants={variants1}
-      className="embla h-full" ref={emblaRef}>
-      <div className="embla__container h-full">
-        <div className="embla__slide">
+      className="embla h-full" ref={emblaRef}
+    >
+      <div className="embla__container relative h-full">
+        <div className="embla__slide ">
+          <OtherInfo/>
           <Eventone />
         </div>
         <div className="embla__slide">
+          <OtherInfo/>
           <Eventtwo />
         </div>
         <div className="embla__slide">
+          <OtherInfo/>
           <Eventthree />
         </div>
         <div className="embla__slide">
+          <OtherInfo/>
           <Eventfour />
         </div>
       </div>
@@ -50,11 +54,10 @@ export default CollectionCarousel
 
 function OtherInfo() {
   return (
-    <div className='flex flex-col gap-8 m-6'>
-      <h1 className='font-bold text-4xl'>Event Name</h1>
-      <div className='w-fit flex flex-row gap-2 items-center justify-center font-semibold text-xl'>
-        <MapPin />
-        <p>Location</p>
+    <div className='flex flex-col gap-2 '>
+      <h1 className='font-bold text-4xl'>Lunar Palace:</h1>
+      <div className='w-fit flex items-center justify-center font-semibold text-xl'>
+        <p>{"(ft. Kanye west)"}</p>
       </div>
     </div>
   )
@@ -62,7 +65,7 @@ function OtherInfo() {
 
 function Eventone() {
   return (
-    <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105'>
+    <div className=' h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-95'>
       <Image
         src={image1}
         alt="NextUI Fruit Image with Zoom"
@@ -70,15 +73,12 @@ function Eventone() {
         height={600}
         className='h-full w-full object-cover'
       />
-      <div className='absolute bottom-0 left-0'>
-        <OtherInfo />
-      </div>
     </div>
   )
 }
 function Eventtwo() {
   return (
-    <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105'>
+    <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-95'>
       <Image
         src={image2}
         alt="NextUI Fruit Image with Zoom"
@@ -86,15 +86,12 @@ function Eventtwo() {
         height={600}
         className='h-full w-full object-cover'
       />
-      <div className='absolute bottom-0 left-0'>
-        <OtherInfo />
-      </div>
     </div>
   )
 }
 function Eventthree() {
   return (
-    <div className='relative h-full flex items-center justify-center  transition-transform duration-300 ease-in-out hover:scale-105'>
+    <div className='relative h-full flex items-center justify-center  transition-transform duration-300 ease-in-out hover:scale-95'>
       <Image
         src={image3}
         alt="NextUI Fruit Image with Zoom"
@@ -102,15 +99,12 @@ function Eventthree() {
         height={600}
         className='h-full w-full object-cover'
       />
-      <div className='absolute bottom-0 left-0'>
-        <OtherInfo />
-      </div>
     </div>
   )
 }
 function Eventfour() {
   return (
-    <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105'>
+    <div className='relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-95'>
       <Image
         src={image4}
         alt="NextUI Fruit Image with Zoom"
@@ -118,9 +112,6 @@ function Eventfour() {
         height={600}
         className='h-full w-full object-cover'
       />
-      <div className='absolute bottom-0 left-0'>
-        <OtherInfo />
-      </div>
     </div>
   )
 }

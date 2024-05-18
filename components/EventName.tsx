@@ -57,7 +57,6 @@ const EventName = () => {
         className='w-full pr-6'
       >
         <ArtistLineup />
-
       </motion.div>
     </motion.div>
   )

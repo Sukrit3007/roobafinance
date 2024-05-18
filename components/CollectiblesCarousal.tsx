@@ -1,6 +1,6 @@
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+import { Card } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { Chip } from "@nextui-org/chip";
 import Autoplay from 'embla-carousel-autoplay'
@@ -8,9 +8,10 @@ import Autoplay from 'embla-carousel-autoplay'
 const CollectiblesCarousal = () => {
     const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 1200, stopOnInteraction: false })])
     return (
-        <div>
-            <h1>Collectibles</h1>
-
+        <div className='flex flex-col gap-4'>
+            <div>
+                <h1>Collectibles</h1>
+            </div>
             <div className="embla2" ref={emblaRef}>
                 <div className="embla2__container">
                     <div className="embla2__slide"><CollectiblesCards /></div>
@@ -19,6 +20,7 @@ const CollectiblesCarousal = () => {
                     <div className="embla2__slide"><CollectiblesCards /></div>
                 </div>
             </div>
+
         </div>
     )
 }
