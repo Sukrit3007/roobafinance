@@ -3,8 +3,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      <MainCarousel/>
+    <div className='max-h-[800px]'>
+      {/* <MainCarousel/> */}
     </div>
   )
 }

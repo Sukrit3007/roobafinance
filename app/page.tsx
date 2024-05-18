@@ -3,7 +3,7 @@ import MainBlock from "@/components/MainBlock";
 
 export default function Home() {
 	return (
-		<section className="min-h-screen grid grid-cols-1 md:grid-cols-3">
+		<section className="min-h-screen grid grid-cols-1 lg:grid-cols-3">
 			<div className="h-full md:col-span-2 border border-red-400">
 				<MainBlock/>	
 			</div>
