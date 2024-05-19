@@ -33,29 +33,35 @@ const InfoSidebar = () => {
                     },
                 },
             }}
-            className='relative min-h-screen w-full py-10 pl-8 md:pl-12 lg:pl-16 xl:pl-20 flex flex-col items-start justify-between gap-4'
+            className='relative min-h-screen w-full py-10 pl-8 md:pl-12 lg:pl-16 xl:pl-20 flex flex-col items-start justify-between gap-20'
         >
-            {/* heading */}
+            {/* HEADING */}
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='h-full w-full'
+                className='basis-1/4 h-full w-full '
             >
                 <div className='max-w-[70%]'>
                     <h1 className='font-bold text-2xl md:text-3xl lg:text-4xl'>Explore Your First Event</h1>
                 </div>
             </motion.div>
 
+            {/* MIDDLE */}
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='h-full '
+                className='shrink h-full flex items-center'
+                style={{ flex: '2 1 auto' }}
             >
-                {activeTab === 'events' && <EventName />}
-                {activeTab === 'collection' && <MetaLives />}
+
+                    {activeTab === 'events' && <EventName />}
+                    {activeTab === 'collection' && <MetaLives />}
+
+
             </motion.div>
 
+            {/* BOTTOM */}
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='h-full w-full'
+                className='h-full w-full justify-self-end'
             >
                 <ButtonAndQr />
             </motion.div>
@@ -73,8 +79,8 @@ function ButtonAndQr() {
         <div className='h-full flex flex-row flex-wrap gap-4 items-end justify-between'>
             <div>
                 {activeTab === 'events' && <Image
-                    height={120}
-                    width={120}
+                    height={100}
+                    width={100}
                     src={qrcode}
                     alt='qr'
                 />}
@@ -85,7 +91,7 @@ function ButtonAndQr() {
                 <Button
                     size='lg'
                     radius='full'
-                    className='bg-[#FFCA5F] text-black font-bold  font-lexend'
+                    className='bg-[#FFCA5F] text-black font-bold font-lexend'
                 >
                     Join Waitlist
                 </Button>
