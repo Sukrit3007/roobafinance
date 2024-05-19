@@ -33,12 +33,12 @@ const InfoSidebar = () => {
                     },
                 },
             }}
-            className='relative min-h-screen w-full flex flex-col gap-10 items-center justify-between py-10 pl-16'
+            className='relative min-h-screen w-full py-10 pl-12 flex flex-col items-start justify-between gap-4'
         >
             {/* heading */}
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='w-full'
+                className='h-full w-full'
             >
                 <div className='max-w-[70%]'>
                     <h1 className='font-bold text-2xl md:text-3xl lg:text-4xl'>Explore Your First Event</h1>
@@ -47,6 +47,7 @@ const InfoSidebar = () => {
 
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
+                className='h-full '
             >
                 {activeTab === 'events' && <EventName />}
                 {activeTab === 'collection' && <MetaLives />}
@@ -54,7 +55,7 @@ const InfoSidebar = () => {
 
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='w-full pt-10'
+                className='h-full w-full'
             >
                 <ButtonAndQr />
             </motion.div>
