@@ -32,3 +32,16 @@ html{
     min-width: 0;
   }
   
+  @keyframes grow-shrink {
+    0%, 100% {
+      width: 100%;
+    }
+    50% {
+      width: 50%;
+    }
+  }
+  
+  .animate-grow-shrink {
+    animation: grow-shrink 2s infinite;
+  }
+  

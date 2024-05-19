@@ -15,10 +15,14 @@ module.exports = {
       textOrientation: {
         'sideways': 'sideways',
       },
+      objectPosition: {
+        'center-bottom': 'center bottom',
+      },
       animation: {
         marquee: 'marquee 10s linear infinite',
         marquee2: 'marquee2 10s linear infinite',
       },
+      
       keyframes: {
         marquee: {
           '0%': { transform: 'translateY(0%)' },
@@ -28,6 +32,7 @@ module.exports = {
           '0%': { transform: 'translateY(100%)' },
           '100%': { transform: 'translateY(0%)' },
         },
+       
       },
     },
   },
