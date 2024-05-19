@@ -34,8 +34,14 @@ const EventCarousel = () => {
         >
             <div className="embla__container relative h-full">
                 {images.map((image, index) => (
-                    <div className="embla__slide" key={index}>
+                    <div className="embla__slide relative" key={index}>
+                        <div className='invisible'>
+                            <OtherInfo/>
+                        </div>
                         <Event image={image} />
+                        <div className='absolute bottom-0 left-0'>
+                            <EvenNameInfo />
+                        </div>
                     </div>
                 ))}
             </div>
@@ -43,7 +49,7 @@ const EventCarousel = () => {
     )
 }
 
-const Event = ({ image }:any) => (
+const Event = ({ image }: any) => (
     <div className="relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-95">
         <Image
             src={image}
@@ -52,9 +58,6 @@ const Event = ({ image }:any) => (
             height={600}
             className="h-full w-full object-cover"
         />
-        <div className="absolute bottom-0 left-0">
-            <EvenNameInfo />
-        </div>
     </div>
 )
 

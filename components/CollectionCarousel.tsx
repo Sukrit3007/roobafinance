@@ -43,7 +43,7 @@ const CollectionCarousel = () => {
 }
 
 const Event = ({ image }: any) => (
-  <div className="relative h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-95">
+  <div className="h-full flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-95">
     <Image
       src={image}
       alt="Event Image"

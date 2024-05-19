@@ -22,11 +22,11 @@ const Hero: React.FC = () => {
         <div className='absolute top-0 z-10 h-full w-full flex items-center justify-center'>
           <div className='h-full flex items-end'>
             {activeTab === 'events' ? (
-              <CarouselWrapper height="90%">
+              <CarouselWrapper>
                 <EventCarousel />
               </CarouselWrapper>
             ) : (
-              <CarouselWrapper height="100%">
+              <CarouselWrapper>
                 <CollectionCarousel />
               </CarouselWrapper>
             )}
@@ -45,7 +45,7 @@ const BackgroundText = ({ activeTab }:any) => (
   <>
     <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl opacity-25'>ASTR<br />IX</h1>
     {activeTab === 'events' && (
-      <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl opacity-25'>EVE<br />NTS</h1>
+      <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl opacity-25'>EVE<br />NTS <br/></h1>
     )}
     {activeTab === 'collection' && (
       <h1 className='font-bold text-6xl md:text-7xl lg:text-9xl opacity-25'>COLL<br />ECTI<br />BLE</h1>
@@ -53,8 +53,8 @@ const BackgroundText = ({ activeTab }:any) => (
   </>
 );
 
-const CarouselWrapper = ({ children, height }:any) => (
-  <div className='relative flex items-end' style={{ height }}>
+const CarouselWrapper = ({ children }:any) => (
+  <div className='relative h-full flex items-end'>
     {children}
   </div>
 );
