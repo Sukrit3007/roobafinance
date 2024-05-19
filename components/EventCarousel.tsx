@@ -28,17 +28,29 @@ const EventCarousel = () => {
             transition={{ duration: 1 }}
             variants={variants1}
             className="embla h-full" ref={emblaRef}>
-            <div className="embla__container h-full">
+            <div className="embla__container relative h-full">
                 <div className="embla__slide">
+                <div className='h-0'>
+                    <OtherInfo/>
+                </div>
                     <Eventone />
                 </div>
                 <div className="embla__slide">
+                    <div className='h-0'>
+                        <OtherInfo/>
+                    </div>
                     <Eventtwo />
                 </div>
                 <div className="embla__slide">
+                    <div className='h-0'>
+                        <OtherInfo/>
+                    </div>
                     <Eventthree />
                 </div>
                 <div className="embla__slide">
+                    <div className='h-0'>
+                        <OtherInfo/>
+                    </div>
                     <Eventfour />
                 </div>
             </div>
