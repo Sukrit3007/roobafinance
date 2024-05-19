@@ -70,7 +70,7 @@ export default InfoSidebar;
 function ButtonAndQr() {
     const { activeTab, setActiveTab } = useTabStore();
     return (
-        <div className='h-full grid lg:grid-cols-2 items-end'>
+        <div className='h-full grid lg:grid-cols-2  items-end'>
             <div>
                 {activeTab === 'events' && <Image
                     height={120}
@@ -85,7 +85,7 @@ function ButtonAndQr() {
                 <Button
                     size='lg'
                     radius='full'
-                    className='bg-[#FFCA5F] text-black font-bold text-sm md:text-xl font-lexend'
+                    className='bg-[#FFCA5F] text-black font-bold  font-lexend'
                 >
                     Join Waitlist
                 </Button>
