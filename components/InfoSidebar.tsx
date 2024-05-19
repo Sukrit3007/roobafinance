@@ -70,13 +70,13 @@ export default InfoSidebar;
 function ButtonAndQr() {
     const { activeTab, setActiveTab } = useTabStore();
     return (
-        <div className='h-full grid lg:grid-cols-2  items-end'>
+        <div className='h-full flex flex-row flex-wrap gap-4 items-end justify-between'>
             <div>
                 {activeTab === 'events' && <Image
                     height={120}
                     width={120}
                     src={qrcode}
-                    alt='NextUI Album Cover'
+                    alt='qr'
                 />}
                 {activeTab === 'collection' && null}
 
