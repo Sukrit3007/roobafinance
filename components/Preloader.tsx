@@ -38,7 +38,7 @@ function BrandLogo() {
 
       <div>
         <Image
-          src='/Logo2.svg'
+          src='/logo2.svg'
           alt='icon'
           width={50}
           height={50}
