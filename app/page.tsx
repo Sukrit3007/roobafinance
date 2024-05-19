@@ -23,7 +23,7 @@ export default function Home() {
 						</div>
 						<Hero />
 					</div>
-					<div className="relative min-h-screen md:col-span-1">
+					<div className="relative bg-[#15181B] min-h-screen md:col-span-1 z-50">
 						<div className="min-h-screen ">
 							<InfoSidebar />
 						</div>
