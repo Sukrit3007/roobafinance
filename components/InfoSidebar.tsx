@@ -33,7 +33,7 @@ const InfoSidebar = () => {
                     },
                 },
             }}
-            className='h-screen w-full flex flex-col items-center justify-between  py-10 pl-16'
+            className='relative min-h-screen w-full flex flex-col gap-10 items-center justify-between py-10 pl-16'
         >
             {/* heading */}
             <motion.div
@@ -54,7 +54,7 @@ const InfoSidebar = () => {
 
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='w-full'
+                className='w-full pt-10'
             >
                 <ButtonAndQr />
             </motion.div>
@@ -69,7 +69,7 @@ export default InfoSidebar;
 function ButtonAndQr() {
     const { activeTab, setActiveTab } = useTabStore();
     return (
-        <div className='grid lg:grid-cols-2 gap-6'>
+        <div className='h-full grid lg:grid-cols-2 items-end'>
             <div>
                 {activeTab === 'events' && <Image
                     height={120}
@@ -80,7 +80,7 @@ function ButtonAndQr() {
                 {activeTab === 'collection' && null}
 
             </div>
-            <div className='flex items-end justify-start lg:justify-end pr-8'>
+            <div className='flex items-end justify-end pr-8'>
                 <Button
                     radius='full'
                     className='bg-[#FFCA5F] text-black font-bold text-base lg:text-xl font-lexend'

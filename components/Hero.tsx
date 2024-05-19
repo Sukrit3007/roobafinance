@@ -13,13 +13,13 @@ import useTabStore from '@/lib/store';
 const Hero: React.FC = () => {
   const { activeTab, setActiveTab } = useTabStore();
   return (
-    <section className='relative h-screen w-full py-10 pl-8 flex flex-col items-start justify-between gap-4'>
+    <section className='relative min-h-screen w-full py-10 pl-8 flex flex-col items-start justify-between gap-4'>
       <BrandLogo />
 
       <div className='relative h-full w-full flex flex-col gap-12 items-start justify-between '>
-        <h1 className='font-bold text-6xl md:text-7xl lg:text-9xl opacity-25'>ASTR<br />IX</h1>
+        <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl opacity-25'>ASTR<br />IX</h1>
         {activeTab === 'events' && (
-          <h1 className='font-bold text-6xl md:text-7xl lg:text-9xl opacity-25 pb-24'>EVE<br />NTS</h1>
+          <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl xl:text-9xl opacity-25 pb-24'>EVE<br />NTS</h1>
           
         )}
         {activeTab === 'collection' && (

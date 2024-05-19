@@ -2,18 +2,20 @@ import React from 'react'
 
 const ScrolllingText = () => {
     return (
-        <div style={{ writingMode: 'vertical-lr' }} className='px-4 flex flex-row gap-2 overflow-y-hidden whitespace-nowrap h-screen bg-[#B9A0FF] text-black'>
-            <div className='animate-marquee flex flex-row gap-4 items-center text-4xl'>
-                <h1>Event : Oasis Bus tour , JLN Stadium , Delhi </h1>
-                <Star/>
-                <h1>Collection Live : Meta Lives , live on astrix </h1>
-                <Star/>
-            </div>
-            <div className='animate-marquee2 flex flex-row gap-4 items-center text-4xl'>
-                <h1>Event : Oasis Bus tour , JLN Stadium , Delhi </h1>
-                <Star/>
-                <h1>Collection Live : Meta Lives , live on astrix </h1>
-                <Star/>
+        <div className='max-h-screen '>
+            <div style={{ writingMode: 'vertical-lr' }} className='px-4 min-h-screen flex flex-row gap-2 overflow-hidden whitespace-nowrap bg-[#B9A0FF] text-black'>
+                <div className='animate-marquee flex flex-row gap-4 items-center text-4xl'>
+                    <h1>Event : Oasis Bus tour , JLN Stadium , Delhi </h1>
+                    <Star />
+                    <h1>Collection Live : Meta Lives , live on astrix </h1>
+                    <Star />
+                </div>
+                <div className='animate-marquee2 flex flex-row gap-4 items-center text-4xl'>
+                    <h1>Event : Oasis Bus tour , JLN Stadium , Delhi </h1>
+                    <Star />
+                    <h1>Collection Live : Meta Lives , live on astrix </h1>
+                    <Star />
+                </div>
             </div>
         </div>
     )

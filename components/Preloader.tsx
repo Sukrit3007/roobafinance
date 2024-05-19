@@ -17,7 +17,7 @@ const Preloader = () => {
           opacity:1, y:-1000, 
         }}
         transition={{ duration: 2, delay: 2, type:spring }}
-        className='relative h-screen w-screen bg-[#FFF4DF] flex items-center justify-center p-12'
+        className='relative h-screen w-screen bg-[#FFF4DF] flex items-center justify-center'
       >
       <div className='absolute top-0 left-0 px-8 py-16 hidden lg:inline'>
         <BrandLogo />
