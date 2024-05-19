@@ -33,7 +33,7 @@ const InfoSidebar = () => {
                     },
                 },
             }}
-            className='relative min-h-screen w-full py-10 pl-8 md:pl-12 lg:pl-16 xl:pl-20 flex flex-col items-start justify-between gap-20'
+            className='relative min-h-screen w-full py-10 pl-8 md:pl-12 lg:pl-16 xl:pl-20 flex flex-col items-start justify-start gap-16'
         >
             {/* HEADING */}
             <motion.div
@@ -61,7 +61,7 @@ const InfoSidebar = () => {
             {/* BOTTOM */}
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='h-full w-full justify-self-end'
+                className='abs h-full w-full'
             >
                 <ButtonAndQr />
             </motion.div>
