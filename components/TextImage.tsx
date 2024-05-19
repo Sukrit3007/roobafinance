@@ -16,7 +16,7 @@ const TextImage = () => {
     const image8 = "https://utfs.io/f/ea9ba1f9-830f-48ba-ade5-fd1279f1fb2f-uj769o.png"
 
   return (
-    <div className='bg-[#FFF4DF] w-full h-full m-auto max-w-5xl md:py-10 py-4 md:px-6 px-4 flex flex-col gap-8 text-3xl md:text-6xl font-normal tracking-tight'>
+    <div className='bg-[#FFF4DF] w-full h-full m-auto max-w-5xl md:py-10 py-4 md:px-6 px-4 flex flex-col gap-6 text-3xl md:text-6xl font-normal tracking-tight'>
             {/* Line 1 */}
             <div className='flex flex-row gap-2 text-black overflow-y-hidden'>
                 <div className='flex-shrink-0'>
