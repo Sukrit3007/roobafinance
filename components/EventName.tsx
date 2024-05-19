@@ -72,31 +72,32 @@ function ArtistLineup() {
   return (
     <div className='flex flex-col gap-6'>
       <h1 className='font-bold text-2xl'>Artist Lineup</h1>
-      <div className='relative grid grid-cols-3 items-center space-x-[-16px]'>
-        <div className='relative'>
+      <div className='relative flex items-center justify-center '>
+
+        <div className='w-fit flex items-center justify-center -mr-2'>
           <Image
             src={artist1}
             alt='artist'
-            width={160}
-            height={160}
-            className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
+            width={150}
+            height={150}
+            className='object-none aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
           />
         </div>
-        <div className='relative z-10'>
+        <div className='w-fit flex items-center justify-center z-10'>
           <Image
             src={artist2}
             alt='artist'
-            width={220}
-            height={220}
+            width={200}
+            height={200}
             className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
           />
         </div>
-        <div className='relative'>
+        <div className='w-fit flex items-center justify-center -ml-2'>
           <Image
             src={artist3}
             alt='artist'
-            width={160}
-            height={160}
+            width={150}
+            height={150}
             className='object-cover aspect-square rounded-xl transition-transform duration-300 ease-in-out hover:scale-105'
           />
         </div>

@@ -22,7 +22,7 @@ const Preloader = () => {
       <div className='absolute top-0 left-0 px-8 py-16 hidden lg:inline'>
         <BrandLogo />
       </div>
-      <div>
+      <div className='z-20'>
         <TextImage />
       </div>
     </motion.div>
