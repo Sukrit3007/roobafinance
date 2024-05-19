@@ -33,7 +33,7 @@ const InfoSidebar = () => {
                     },
                 },
             }}
-            className='relative min-h-screen w-full py-10 pl-12 flex flex-col items-start justify-between gap-4'
+            className='relative min-h-screen w-full py-10 pl-8 md:pl-12 lg:pl-16 xl:pl-20 flex flex-col items-start justify-between gap-4'
         >
             {/* heading */}
             <motion.div

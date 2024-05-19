@@ -3,7 +3,7 @@ import React from 'react'
 const ScrolllingText = () => {
     return (
         <div className='max-h-screen '>
-            <div style={{ writingMode: 'vertical-lr' }} className='px-6 min-h-screen flex flex-row gap-2 overflow-hidden whitespace-nowrap bg-[#B9A0FF] text-black'>
+            <div style={{ writingMode: 'vertical-lr' }} className='p-6 min-h-screen flex flex-row gap-2 overflow-hidden whitespace-nowrap bg-[#B9A0FF] text-black'>
                 <div className='animate-marquee flex flex-row gap-4 items-center text-4xl'>
                     <h1>Event : Oasis Bus tour , JLN Stadium , Delhi </h1>
                     <Star />
