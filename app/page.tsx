@@ -17,13 +17,13 @@ export default function Home() {
 		<div>
 			{loading ? (
 				<section className="min-h-screen grid grid-cols-1 lg:grid-cols-3 overflow-hidden">
-					<div className="relative min-h-screen md:col-span-2 ">
+					<div className="relative min-h-screen md:col-span-2">
 						<div className="hidden md:inline min-h-screen absolute z-50 right-0 top-0">
 							<ScrolllingText />
 						</div>
 						<Hero />
 					</div>
-					<div className="relative bg-[#15181B] min-h-screen md:col-span-1 z-50">
+					<div className="relative bg-[#15181B] min-h-screen md:col-span-1 z-40">
 						<div className="min-h-screen ">
 							<InfoSidebar />
 						</div>
@@ -31,7 +31,6 @@ export default function Home() {
 				</section>
 			) : < Preloader /> 
 			}
-
 		</div>
 
 	);

@@ -17,7 +17,7 @@ const Preloader = () => {
           opacity:1, y:-1000, 
         }}
         transition={{ duration: 2, delay: 2, type:spring }}
-        className='relative h-screen w-screen bg-[#FFF4DF] flex items-center justify-center'
+        className='relative h-screen w-screen  bg-[#FFF4DF] flex items-center justify-center'
       >
       <div className='absolute top-0 left-0 px-8 py-16 hidden lg:inline'>
         <BrandLogo />
@@ -40,16 +40,16 @@ function BrandLogo() {
         <Image
           src='/logo2.svg'
           alt='icon'
-          width={50}
-          height={50}
+          width={40}
+          height={40}
         />
       </div>
       <div>
         <Image
           src='/Branding2.svg'
           alt='icon'
-          width={130}
-          height={30}
+          width={100}
+          height={20}
         />
       </div>
     </div>

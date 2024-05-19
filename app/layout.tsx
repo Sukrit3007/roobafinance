@@ -3,7 +3,6 @@ import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import {  lexend } from "@/config/fonts";
 import { Providers } from "./providers";
-import clsx from "clsx";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {

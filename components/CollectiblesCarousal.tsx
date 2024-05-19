@@ -29,7 +29,7 @@ export default CollectiblesCarousal
 
 
 function CollectiblesCards() {
-    const image = "https://s3-alpha-sig.figma.com/img/11ff/a468/17a9a8d438bc26d999399303984cfe8f?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KNvFXO~pk7or-HdDZZqILty5OF1WJsJD8UwtOrZz4vS~BC45s3gthFjPMJZD0cOI60myLJBe8lRflvEI8bI6GbEYzSV-IFZKcFTM7pI2twTwPtoqbwigcQxD5UaUvVa0F4okJOiuc~ZmChfb54WPYhHnHouQBosINwZfuXXq4~5CukmHb1h7iqUKUL-tYT9xc0RAiMqxbwjMjWSIgaF~TyrmotRhD~mg2AO0Ldx81FXxp2oOE9kHsXVzrFf2H6mlREDT17eHApYI~XPRVidKrWz1g3~uEccCw5QMOb9byAA8RpmyAe8Cmu9W3y2PlaLw3ECAIdfYI5A8Ir6qa8nm3g__"
+    const image ="https://utfs.io/f/8a93c2a2-94f1-481c-a4b3-99c495a0a34f-num2da.png"
     return (
         <Card className="py-2 px-2 bg-[#B9A0FF] cursor-pointer text-black transition-transform duration-300 ease-in-out hover:scale-95">
             <div className="overflow-visible py-0 flex flex-col gap-2">
