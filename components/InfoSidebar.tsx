@@ -83,8 +83,9 @@ function ButtonAndQr() {
             </div>
             <div className='flex items-end justify-end pr-8'>
                 <Button
+                    size='lg'
                     radius='full'
-                    className='bg-[#FFCA5F] text-black font-bold text-base lg:text-xl font-lexend'
+                    className='bg-[#FFCA5F] text-black font-bold text-sm md:text-xl font-lexend'
                 >
                     Join Waitlist
                 </Button>
