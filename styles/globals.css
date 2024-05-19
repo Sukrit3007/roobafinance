@@ -28,7 +28,7 @@ html{
     gap: 16px;
   }
   .embla2__slide {
-    flex: 0 0 35%;
+    flex: 1 0 30%;
     min-width: 0;
   }
   

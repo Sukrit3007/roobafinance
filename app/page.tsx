@@ -4,14 +4,15 @@ import Hero from "@/components/Hero";
 import InfoSidebar from "@/components/InfoSidebar";
 import Preloader from "@/components/Preloader";
 import ScrolllingText from "@/components/ScrolllingText";
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
-	const [loading, setLoading] = React.useState<any>(false)
+	const [loading, setLoading] = useState(false);
 
-	React.useEffect(() => {
-		setTimeout(() => setLoading(true), 4000)
-	}, [])
+	useEffect(() => {
+		const timer = setTimeout(() => setLoading(true), 4000);
+		return () => clearTimeout(timer);
+	}, []);
 
 	return (
 		<div>
@@ -24,14 +25,12 @@ export default function Home() {
 						<Hero />
 					</div>
 					<div className="relative bg-[#15181B] min-h-screen md:col-span-1 z-40">
-						<div className="min-h-screen ">
-							<InfoSidebar />
-						</div>
+						<InfoSidebar />
 					</div>
 				</section>
-			) : < Preloader /> 
-			}
+			) : (
+				<Preloader />
+			)}
 		</div>
-
 	);
 }
