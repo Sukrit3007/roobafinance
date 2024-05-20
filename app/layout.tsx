@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import {  lexend } from "@/config/fonts";
 import { Providers } from "./providers";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
 	title: {
@@ -38,6 +39,7 @@ export default function RootLayout({
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 							{children}
+							<Analytics />
 				</Providers>
 			</body>
 		</html>
