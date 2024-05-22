@@ -21,19 +21,29 @@ const EventName = () => (
     }}
     className='h-full w-full flex flex-col gap-6'
   >
-    <AnimatedHeading>Event Name</AnimatedHeading>
+    <motion.h1
+      variants={FADE_UP_ANIMATION_VARIANTS}
+      className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+    >
+      Event Name
+    </motion.h1>
     <EventDetails />
-    <EventDescription />
+    <motion.p
+      variants={FADE_UP_ANIMATION_VARIANTS}
+      className="scroll-m-20 text-lg font-normal tracking-tight"
+    >
+        Lorem ipsum dolor sit amet consectetur. Ac lorem massa in morbi et sed ipsum. Pellentesque mattis condimentum ut nulla.
+    </motion.p>
     <ArtistLineup />
   </motion.div>
 )
 
 export default EventName
 
-const AnimatedHeading = ({ children }:any) => (
+const Heading = ({ children }: any) => (
   <motion.h1
     variants={FADE_UP_ANIMATION_VARIANTS}
-    className='font-extrabold text-2xl md:text-4xl lg:text-5xl'
+    className='font-extrabold text-2xl md:text-[4vw]'
   >
     {children}
   </motion.h1>
@@ -42,15 +52,15 @@ const AnimatedHeading = ({ children }:any) => (
 const EventDetails = () => (
   <motion.div
     variants={FADE_UP_ANIMATION_VARIANTS}
-    className='flex flex-row flex-wrap gap-4 font-semibold text-base md:text-lg lg:text-xl'
+    className='flex flex-row flex-wrap gap-4 font-semibold text-base md:text-[1vw]'
   >
     <DetailItem icon={<MapPin />} text="Venue" />
     <DetailItem icon={<AlarmClock />} text="04/3/2024 @19:00" />
   </motion.div>
 )
 
-const DetailItem = ({ icon, text }:any) => (
-  <div className='w-fit flex flex-row gap-2 items-center justify-center'>
+const DetailItem = ({ icon, text }: any) => (
+  <div className='w-fit flex flex-row gap-2 items-center justify-center scroll-m-20  pb-2 text-2xl font-semibold tracking-tight first:mt-0'>
     {icon}
     <p>{text}</p>
   </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { AvatarGroup, Avatar } from "@nextui-org/avatar";
-import CollectiblesCarousal from './CollectiblesCarousal';
+import CollectiblesCarousal from './ui/CollectiblesCarousal';
 import { motion } from "framer-motion";
 
 const Metalives = () => {
@@ -30,17 +30,17 @@ const Metalives = () => {
                     },
                 },
             }}
-            className='w-full flex flex-col gap-6'
+            className='relative h-full w-full flex flex-col gap-4 leading-relaxed'
         >
             <motion.h1
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='font-extrabold text-3xl md:text-4xl lg:text-6xl'
+                className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
             >
                 Meta Lives
             </motion.h1>
             <motion.div
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className='w-fit font-semibold text-lg md:text-xl lg:text-2xl'
+                className="scroll-m-20  pb-2 text-2xl font-semibold tracking-tight first:mt-0"
             >
                 <p>Live in Astrix</p>
             </motion.div>
@@ -48,7 +48,7 @@ const Metalives = () => {
                 variants={FADE_UP_ANIMATION_VARIANTS}
                 className='max-w-[70%]'
             >
-                <p className='font-semibold text-sm lg:text-base'>
+                <p className="scroll-m-20 text-lg font-normal tracking-tight">
                     Lorem ipsum dolor sit amet consectetur. Ac lorem massa in morbi et sed ipsum. Pellentesque mattis condimentum ut nulla.
                 </p>
             </motion.div>
@@ -61,12 +61,12 @@ const Metalives = () => {
                         <Avatar key={index} src={imageUrl} />
                     ))}
                 </AvatarGroup>
-                <div className='w-fit font-normal text-base md:text-lg lg:text-xl'>
+                <div className="scroll-m-20  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
                     <p>22k people interested</p>
                 </div>
             </motion.div>
-            <motion.div variants={FADE_UP_ANIMATION_VARIANTS}>
-                <CollectiblesCarousal />
+            <motion.div variants={FADE_UP_ANIMATION_VARIANTS} >
+                    <CollectiblesCarousal />
             </motion.div>
         </motion.div>
     );
