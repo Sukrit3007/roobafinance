@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html{
   font-family: var(--my-font-family, --vertical-font),sans-serif;
 }
+
+
 
 .embla {
     overflow: hidden;
@@ -14,9 +17,11 @@ html{
     gap: 16px;
     margin-left: 10rem;
     margin-right: 10rem;
+    border: 2px;
+    border: solid red;
   }
   .embla__slide {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     min-width: 0;
   }
 
